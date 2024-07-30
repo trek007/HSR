@@ -36,4 +36,4 @@ jobs:
       - name: Copy published files
         run: |
           Copy-Item -Path "C:\PublishedFiles" -Destination "C:\AnotherDestination" -Recurse -Force
-        shell: pwsh
+        shell: powershell
