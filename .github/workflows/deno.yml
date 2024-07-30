@@ -1,17 +1,12 @@
-name: Build and Test ASP.NET MVC
+name: Deploy to Local Machine
 
 on:
   push:
     branches:
       - main
-      - develop
-  pull_request:
-    branches:
-      - main
-      - develop
 
 jobs:
-  build:
+  deploy:
     runs-on: windows-latest
 
     steps:
@@ -21,8 +16,11 @@ jobs:
       - name: Set up MSBuild
         uses: microsoft/setup-msbuild@v1
 
-      - name: Restore NuGet packages
-        run: nuget restore HSR.sln
-
       - name: Build
-        run: msbuild HSR.sln /p:Configuration=Release
+        run: msbuild HSR.sln /p:Configuration=Release /p:DeployOnBuild=true /p:PublishProfile=FolderProfile
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-artifacts
+          path: C:\AnotherDestination\PublishedFiles
