@@ -27,11 +27,11 @@ jobs:
 
       - name: Build project
         run: |
-          & "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\msbuild.exe" HSR.sln /p:Configuration=Release
+          & "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\msbuild.exe" HSR.sln /p:Configuration=Release /p:RestorePackagesConfig=true /p:SolutionDir=E:\Project\dev-hsr.kipp\new\hsr-2.0\actions-runner\_work\
 
       - name: Publish project
         run: |
-          & "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\msbuild.exe" HSR.csproj /p:Configuration=Release /p:OutputPath=./publish
+          & "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\msbuild.exe" HSR.sln /p:Configuration=Release /p:OutputPath=./publish /p:RestorePackagesConfig=true /p:SolutionDir=E:\Project\dev-hsr.kipp\new\hsr-2.0\actions-runner\_work\
 
       - name: Upload artifact
         uses: actions/upload-artifact@v3
