@@ -25,9 +25,9 @@ jobs:
       - name: Setup MSBuild Path
         run: echo "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin" >> $GITHUB_PATH
 
-      - name: Build project
+      - name: Clean and Build project
         run: |
-          & "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\msbuild.exe" HSR.sln /p:Configuration=Release /p:RestorePackagesConfig=true
+          & "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\msbuild.exe" HSR.sln /p:Configuration=Release /p:RestorePackagesConfig=true /t:Clean;Build
 
       - name: Publish project
         run: |
