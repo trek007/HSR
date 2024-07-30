@@ -11,28 +11,24 @@ on:
 jobs:
   build:
     runs-on: self-hosted  # This should be your self-hosted runner
-    env:
-      NUGET_PATH: C:\Tools
-      MSBUILD_PATH: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Setup NuGet
-        run: echo "::add-path::$env:NUGET_PATH"
+      - name: Setup NuGet Path
+        run: echo "C:\Tools" >> $GITHUB_PATH
 
       - name: Restore NuGet packages
-        run: $env:NUGET_PATH\nuget.exe restore HSR.sln
+        run: nuget restore HSR.sln
 
-      - name: Setup MSBuild
-        run: echo "::add-path::$env:MSBUILD_PATH"
+      - name: Setup MSBuild Path
+        run: echo "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin" >> $GITHUB_PATH
 
       - name: Build project
-        run: $env:MSBUILD_PATH\msbuild.exe HSR.sln /p:Configuration=Release
+        run: msbuild HSR.sln /p:Configuration=Release
 
       - name: Publish project
-        run: $env:MSBUILD_PATH\msbuild.exe HSR.sln /p:Configuration=Release /p:OutputPath=./publish
+        run: msbuild HSR.sln /p:Configuration=Release /p:OutputPath=./publish
 
       - name: Upload artifact
         uses: actions/upload-artifact@v3
