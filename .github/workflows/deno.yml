@@ -1,39 +1,28 @@
-name: Build and Publish .NET Framework 4.8 MVC Project
+name: Build and Test ASP.NET MVC
 
 on:
   push:
     branches:
       - main
+      - develop
   pull_request:
     branches:
       - main
+      - develop
 
 jobs:
   build:
-    runs-on: self-hosted  # This should be your self-hosted runner
+    runs-on: windows-latest
+
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Setup NuGet Path
-        run: echo "C:\Tools" >> $GITHUB_PATH
+      - name: Set up MSBuild
+        uses: microsoft/setup-msbuild@v1
 
       - name: Restore NuGet packages
-        run: |
-          & "C:\Tools\nuget.exe" restore HSR.sln
-      - name: Setup MSBuild Path
-        run: echo "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin" >> $GITHUB_PATH
+        run: nuget restore HSR.sln
 
-      - name: Build project
-        run: |
-          & "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\msbuild.exe" HSR.sln /p:Configuration=Release /p:RestorePackagesConfig=true /p:SolutionDir=E:\Project\dev-hsr.kipp\new\hsr-2.0\actions-runner\_work\
-      - name: Upload artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: publish-output
-          path: ./publish
-
-      - name: Copy published files
-        run: |
-          Copy-Item -Path "C:\PublishedFiles" -Destination "C:\AnotherDestination" -Recurse -Force
-        shell: powershell
+      - name: Build
+        run: msbuild HSR.sln /p:Configuration=Release
