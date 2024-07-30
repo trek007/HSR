@@ -27,13 +27,13 @@ jobs:
 
       - name: Build project
         run: |
-          & "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\msbuild.exe" HSR.sln /p:Configuration=Release /p:RestorePackagesConfig=true /p:SolutionDir=E:\Project\dev-hsr.kipp\new\hsr-2.0\actions-runner\_work\
+          & "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\msbuild.exe" HSR.sln /p:Configuration=Release /p:RestorePackagesConfig=true
 
       - name: Publish project
         run: |
-          & "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\msbuild.exe" HSR.sln /p:Configuration=Release /p:DeployOnBuild=true /p:PublishProfile=FolderProfile
+          & "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\msbuild.exe" HSR.sln /p:Configuration=Release /p:DeployOnBuild=true /p:PublishUrl="C:\PublishedFiles"
 
       - name: Copy published files
         run: |
-          Copy-Item -Path "E:\Project\dev-hsr.kipp\new\hsr-2.0\actions-runner\_work\publish" -Destination "C:\PublishedFiles" -Recurse -Force
+          Copy-Item -Path "C:\PublishedFiles" -Destination "C:\AnotherDestination" -Recurse -Force
         shell: pwsh  # You can use pwsh or powershell as per your preference
