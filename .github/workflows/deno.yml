@@ -19,16 +19,16 @@ jobs:
         run: echo "C:\Tools" >> $GITHUB_PATH
 
       - name: Restore NuGet packages
-        run: nuget restore HSR.sln
+        run: C:\Tools\nuget.exe restore HSR.sln
 
       - name: Setup MSBuild Path
         run: echo "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin" >> $GITHUB_PATH
 
       - name: Build project
-        run: msbuild HSR.sln /p:Configuration=Release
+        run: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\msbuild.exe HSR.sln /p:Configuration=Release
 
       - name: Publish project
-        run: msbuild HSR.sln /p:Configuration=Release /p:OutputPath=./publish
+        run: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\msbuild.exe HSR.sln /p:Configuration=Release /p:OutputPath=./publish
 
       - name: Upload artifact
         uses: actions/upload-artifact@v3
