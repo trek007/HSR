@@ -1,0 +1,41 @@
+name: Build and Publish .NET Framework 4.8 MVC Project
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: self-hosted  # Change to 'windows-latest' if not using a self-hosted runner
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v1
+
+      - name: Restore NuGet packages
+        run: nuget restore HSR.sln
+
+      - name: Build project
+        run: msbuild HSR.sln /p:Configuration=Release
+
+      - name: Publish project
+        run: msbuild HSR.sln /p:Configuration=Release /p:OutputPath=./publish
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: publish-output
+          path: ./publish
+
+      - name: Copy build output to network drive
+        run: |
+          $destination = 'E:\Project\dev-hsr.kipp\new\hsr-2.0\'
+          New-Item -ItemType Directory -Force -Path $destination
+          Copy-Item -Path ./publish/* -Destination $destination -Recurse -Force
+        shell: pwsh
