@@ -27,7 +27,7 @@ jobs:
 
       - name: Clean and Build project
         run: |
-          & "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\msbuild.exe" HSR.sln /p:Configuration=Release /p:RestorePackagesConfig=true /t:Clean;Build
+          & "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\msbuild.exe" HSR.sln /t:Clean;Build /p:Configuration=Release /p:RestorePackagesConfig=true
 
       - name: Publish project
         run: |
