@@ -10,22 +10,29 @@ on:
 
 jobs:
   build:
-    runs-on: self-hosted  # Change to 'windows-latest' if not using a self-hosted runner
+    runs-on: self-hosted  # This should be your self-hosted runner
+    env:
+      NUGET_PATH: C:\Tools
+      MSBUILD_PATH: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Setup MSBuild
-        uses: microsoft/setup-msbuild@v1
+      - name: Setup NuGet
+        run: echo "::add-path::$env:NUGET_PATH"
 
       - name: Restore NuGet packages
-        run: nuget restore HSR.sln
+        run: $env:NUGET_PATH\nuget.exe restore HSR.sln
+
+      - name: Setup MSBuild
+        run: echo "::add-path::$env:MSBUILD_PATH"
 
       - name: Build project
-        run: msbuild HSR.sln /p:Configuration=Release
+        run: $env:MSBUILD_PATH\msbuild.exe HSR.sln /p:Configuration=Release
 
       - name: Publish project
-        run: msbuild HSR.sln /p:Configuration=Release /p:OutputPath=./publish
+        run: $env:MSBUILD_PATH\msbuild.exe HSR.sln /p:Configuration=Release /p:OutputPath=./publish
 
       - name: Upload artifact
         uses: actions/upload-artifact@v3
@@ -35,7 +42,7 @@ jobs:
 
       - name: Copy build output to network drive
         run: |
-          $destination = 'E:\Project\dev-hsr.kipp\new\hsr-2.0\'
+          $destination = 'E:\Project\dev-hsr.kipp\new\hsr-2.0'
           New-Item -ItemType Directory -Force -Path $destination
           Copy-Item -Path ./publish/* -Destination $destination -Recurse -Force
         shell: pwsh
