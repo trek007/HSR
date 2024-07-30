@@ -29,14 +29,11 @@ jobs:
         run: |
           & "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\msbuild.exe" HSR.sln /p:Configuration=Release /p:RestorePackagesConfig=true /p:SolutionDir=E:\Project\dev-hsr.kipp\new\hsr-2.0\actions-runner\_work\
 
-      - name: Upload artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: publish-output
-          path: ./publish
-
-      - name: Copy build output to network drive
+      - name: Publish project
         run: |
-          $destination = 'E:\Project\dev-hsr.kipp\new\hsr-2.0'
-          New-Item -ItemType Directory -Force -Path $destination
-          Copy-Item -Path ./publish/* -Destination $destination -Recurse -Force
+          & "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\msbuild.exe" HSR.sln /p:Configuration=Release /p:DeployOnBuild=true /p:PublishProfile=FolderProfile
+
+      - name: Copy published files
+        run: |
+          Copy-Item -Path "E:\Project\dev-hsr.kipp\new\hsr-2.0\actions-runner\_work\publish" -Destination "C:\PublishedFiles" -Recurse -Force
+        shell: pwsh  # You can use pwsh or powershell as per your preference
