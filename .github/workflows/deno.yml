@@ -21,19 +21,19 @@ jobs:
       - name: Restore NuGet packages
         run: |
           & "C:\Tools\nuget.exe" restore HSR.sln
-
       - name: Setup MSBuild Path
         run: echo "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin" >> $GITHUB_PATH
 
-      - name: Clean and Build project
+      - name: Build project
         run: |
-          & "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\msbuild.exe" HSR.sln /t:Clean;Build /p:Configuration=Release /p:RestorePackagesConfig=true
-
-      - name: Publish project
-        run: |
-          & "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\msbuild.exe" HSR.sln /p:Configuration=Release /p:DeployOnBuild=true /p:PublishUrl="C:\PublishedFiles"
+          & "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\msbuild.exe" HSR.sln /p:Configuration=Release /p:RestorePackagesConfig=true /p:SolutionDir=E:\Project\dev-hsr.kipp\new\hsr-2.0\actions-runner\_work\
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: publish-output
+          path: ./publish
 
       - name: Copy published files
         run: |
           Copy-Item -Path "C:\PublishedFiles" -Destination "C:\AnotherDestination" -Recurse -Force
-        shell: pwsh  # You can use pwsh or powershell as per your preference
+        shell: pwsh
