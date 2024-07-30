@@ -40,4 +40,3 @@ jobs:
           $destination = 'E:\Project\dev-hsr.kipp\new\hsr-2.0'
           New-Item -ItemType Directory -Force -Path $destination
           Copy-Item -Path ./publish/* -Destination $destination -Recurse -Force
-        shell: pwsh
