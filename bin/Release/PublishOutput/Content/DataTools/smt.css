@@ -1,0 +1,88 @@
+﻿.color-red {
+    color: red;
+}
+
+.k-grid-content table tr {
+    height: 41px !important;
+}
+
+.k-grid-content-locked table tr {
+    height: 41px !important;
+}
+
+.k-grid th.k-header, .k-link,
+.k-grid-header {
+    background: #60A2D6;
+    color: white;
+    text-align: center;
+}
+
+    .k-grid-header .k-header > .k-link {
+        color: white;
+    }
+
+.k-grid .k-alt {
+    background-color: inherit; /* specify the alternate background-color */
+    color: inherit;
+}
+
+.k-grid tr:hover {
+    background-color: inherit;
+    color: inherit;
+}
+
+.k-grid td.k-state-selected:hover, .k-grid tr.k-state-selected:hover {
+    background-color: inherit;
+    background-image: none;
+    color: inherit;
+}
+
+    .k-grid td.k-state-selected:hover, .k-grid tr.k-state-selected:hover td {
+        background-color: inherit;
+        /*color: inherit;*/
+    }
+
+tr.k-state-selected {
+    background-color: inherit;
+    color: inherit;
+}
+
+td.k-state-selected {
+    background-color: inherit;
+    color: inherit;
+}
+
+.k-grid td.k-alt {
+    background-color: inherit; /* specify the alternate background-color */
+    color: inherit;
+}
+
+.k-list > .k-state-selected {
+    background-color: transparent;
+    border-color: transparent;
+    color: black;
+}
+
+.baseRecord {
+    font-family: 'TheSans B6 SemiBold','TheSans B7 Bold','TheSans B8 ExtraBold';
+}
+
+.k-grid-header-locked colgroup col:nth-child(0) {
+    width: 350px;
+}
+
+.k-grid-content-locked colgroup col:nth-child(0) {
+    width: 350px;
+}
+
+
+.k-grid, .k-grid * {
+    border-color: #BEB7B6 !important;
+}
+
+.alert {
+    padding: 5px;
+    margin-bottom: 0px;
+}
+
+

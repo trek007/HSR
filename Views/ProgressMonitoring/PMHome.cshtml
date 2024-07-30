@@ -1,0 +1,40 @@
+﻿@{
+    Layout = "~/Views/Shared/_KIPPLayout.cshtml";
+    ViewBag.TitleValue = "KIPP - HSR";
+    var currentControllerName = @HttpContext.Current.Request.RequestContext.RouteData.Values["controller"].ToString();
+}
+
+<div class="row" style="padding-top:10px;padding-bottom:10px;">    </div>
+@*@Html.AntiForgeryToken()*@
+<div class="row justify-content-md-center">
+    <h2>​Academic​ Progress Mo​nitoring</h2>
+</div>
+<div class="row justify-content-md-center">
+    <h2> A high-level academic data to​ol to monitor Illuminate assessment results every week</h2>
+</div>
+<div class="row justify-content-md-center">
+    <div class="col-md-3">
+        <a class="view-btn justify-content-md-center" href="@Url.Action("Grade", @currentControllerName)"><h2>Grade View​</h2></a>
+        <p>Ideal for <b>middle schools</b> and <b>directional trends for elementary schools​. </b>Results are r​olled up by grade</p>
+    </div>
+    <div class="col-md-3">
+        <a class="view-btn justify-content-md-center" href="@Url.Action("Teacher", @currentControllerName)"><h2>Teacher View</h2></a>
+        <p>​​​​Ideal for <b>elementary schools. </b>​​Results are rolled up by grade and teacher. Only accessible to regions who have opted in.<span style="color:rgb(21, 142, 51)"></span></p>
+    </div>
+    <div class="col-md-3">
+        <a class="view-btn justify-content-md-center" href="@Url.Action("Course", @currentControllerName)"><h2>Course View</h2></a>
+        <p>​​​​Ideal for <b>high schools. </b>​​Results are rolled up by course.<span style="color:rgb(21, 142, 51)"></span></p>
+    </div>
+</div>
+<div class="row justify-content-md-center mt-md-5">
+    <div class="col-md-4">
+        For more information, visit our <a href="https://kippshare.shelf.io/read/9fc63b09-147c-4000-85e8-275ffcfec353?parentId=51927b16-96a4-4e03-9678-09ab79d0c170&view=card-view&trigger=title&searchEventId=01GRSHSG6ZAQ78ERMWY51H3HW8&source=shelf" target="_blank">APM Resource Kit</a> and
+        our <a href="https://kippshare.shelf.io/read/a059229a-0221-40fa-b6be-f7f5213eb8f0?parentId=51927b16-96a4-4e03-9678-09ab79d0c170&view=card-view&trigger=title&searchEventId=01GRSHSG6ZAQ78ERMWY51H3HW8&source=shelf" target="_blank">FAQ page</a>
+    </div>
+    <div class="col-md-5"> </div>
+</div>
+
+
+<script>
+    $("[name='lnkAPM']").addClass('activeMenu');
+</script>

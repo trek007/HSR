@@ -1,0 +1,48 @@
+﻿@model KIPP.HSR.BL.Model.LoginDetails
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_KIPPLayout.cshtml";
+}
+
+@if (ViewBag.LoginError != null)
+{
+    <div class="container">
+        <div class="panel panel-danger"><div class="panel-heading">@ViewBag.LoginError</div></div>
+    </div>
+}
+@using (Html.BeginForm("Login", "Login", FormMethod.Post))
+{
+    <div style="height:15px;"></div>
+    <div class="container jumbotron text-center" style="-ms-border-radius:5px; border-radius:5px;">
+        <p>
+            <div class="row col-md-12 form-group">
+                <h4><label class="col-md-5 text-right" style="font-family:'Trebuchet MS';">User Name <span style="color:red"> @Html.ValidationMessageFor(m => m.UserName)</span></label></h4>
+                @Html.TextBoxFor(m => m.UserName, new { id = "UserName", @class = "form-control col-md-7", style = "font-family:'Trebuchet MS';" })
+            </div>
+            <div class="row col-md-12 form-group">
+                <h4><label class="col-md-5 text-right" style="font-family:'Trebuchet MS';">Password<span style="color:red"> @Html.ValidationMessageFor(m => m.Password)</span></label></h4>
+                @Html.PasswordFor(m => m.Password, new { id = "Password", @class = "form-control col-md-7", style = "font-family:'Trebuchet MS';" })
+            </div>
+            <div>
+                <input type="submit" name="Login" class="btn btn-primary" value="Login" />
+                <input type="button" name="Cancel" class="btn btn-primary" value="Cancel" onclick="location.href ='@Url.Action("Login","Login")'" />
+            </div>
+        </p>
+    </div>
+}
+
+<script>
+
+    function Validate() {
+        if ($.trim($('#UserName').val()) === '' || $.trim($('#Password').val()) === '') {
+            alert('Enter User name and password');
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+
+</script>
+

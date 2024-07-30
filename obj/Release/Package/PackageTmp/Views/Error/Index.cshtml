@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_KIPPLayout.cshtml";
+}
+<br /><br /><br />
+@if (ViewBag.LoginError != null)
+{
+    <div class="container">
+        <div class="panel panel-danger">
+            <div class="panel-heading">@ViewBag.LoginError</div>
+        </div>
+    </div>
+}
+

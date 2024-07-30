@@ -1,0 +1,222 @@
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\ApplicationInsights.config
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\roslyn\csc.exe
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\roslyn\csc.exe.config
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\roslyn\csc.rsp
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\roslyn\csi.exe
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\roslyn\csi.rsp
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\roslyn\System.AppContext.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\roslyn\vbc.exe
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\roslyn\vbc.exe.config
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\roslyn\vbc.rsp
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\roslyn\VBCSCompiler.exe
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\Content\Fonts\TheSnB5_.ttf
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\Content\Fonts\TheSnB8_.ttf
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\Content\Fonts\TheSnB6_.ttf
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\Content\Help\VMT_Help.pdf
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\KIPP.DataTools.UI.dll.config
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\KIPP.DataTools.UI.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\KIPP.DataTools.UI.pdb
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\Antlr3.Runtime.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\EntityFramework.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\EntityFramework.SqlServer.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\KIPP.DataTools.BL.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\Microsoft.AI.Web.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\Microsoft.ApplicationInsights.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\Newtonsoft.Json.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\System.Web.Helpers.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\System.Web.Mvc.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\System.Web.Optimization.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\System.Web.Razor.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\System.Web.WebPages.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\System.Web.WebPages.Razor.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\WebGrease.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\KIPP.DataTools.BL.pdb
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\EntityFramework.xml
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\EntityFramework.SqlServer.xml
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\Newtonsoft.Json.xml
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\System.Web.Helpers.xml
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\System.Web.Mvc.xml
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\System.Web.Optimization.xml
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\System.Web.Razor.xml
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\System.Web.WebPages.xml
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\System.Web.WebPages.Razor.xml
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\Antlr3.Runtime.pdb
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\Microsoft.ApplicationInsights.xml
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\bin\Microsoft.AI.Web.xml
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\obj\Debug\KIPP.KTCData.UI.csprojResolveAssemblyReference.cache
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\obj\Debug\KIPP.KTCData.UI.csproj.CoreCompileInputs.cache
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\obj\Debug\KIPP.DataTools.UI.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\data_tools\trunk\KIPP.DataTools\KIPP.DataTools.UI\obj\Debug\KIPP.DataTools.UI.pdb
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\obj\Debug\KIPP.KTCData.UI.csproj.CoreCompileInputs.cache
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\ApplicationInsights.config
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\csc.exe
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\csc.exe.config
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\csc.rsp
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\csi.exe
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\csi.rsp
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\System.AppContext.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\vbc.exe
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\vbc.exe.config
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\vbc.rsp
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\VBCSCompiler.exe
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\Content\Fonts\TheSnB5_.ttf
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\Content\Fonts\TheSnB8_.ttf
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\Content\Fonts\TheSnB6_.ttf
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\Content\Help\VMT_Help.pdf
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\KIPP.KTCData.UI.dll.config
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\KIPP.KTCData.UI.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\KIPP.KTCData.UI.pdb
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\Antlr3.Runtime.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\Microsoft.AI.Web.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\Microsoft.ApplicationInsights.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\Newtonsoft.Json.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\System.Web.Helpers.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\System.Web.Mvc.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\System.Web.Optimization.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\System.Web.Razor.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\System.Web.WebPages.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\System.Web.WebPages.Razor.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\WebGrease.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\Newtonsoft.Json.xml
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\System.Web.Helpers.xml
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\System.Web.Mvc.xml
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\System.Web.Optimization.xml
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\System.Web.Razor.xml
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\System.Web.WebPages.xml
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\System.Web.WebPages.Razor.xml
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\Antlr3.Runtime.pdb
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\Microsoft.ApplicationInsights.xml
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\bin\Microsoft.AI.Web.xml
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\obj\Debug\KIPP.KTCData.UI.dll
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\obj\Debug\KIPP.KTCData.UI.pdb
+C:\Users\mbrybag\OneDrive - KIPP Foundation\Desktop\KIPP.KTCData\KIPP.KTCData.UI\obj\Debug\KIPP.KTCData.UI.csprojResolveAssemblyReference.cache
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\ApplicationInsights.config
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\csc.exe
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\csc.exe.config
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\csc.rsp
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\csi.exe
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\csi.rsp
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\System.AppContext.dll
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\System.Collections.Immutable.dll
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\System.IO.FileSystem.dll
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\System.Reflection.Metadata.dll
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\vbc.exe
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\vbc.exe.config
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\vbc.rsp
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\VBCSCompiler.exe
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\roslyn\VBCSCompiler.exe.config
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\Content\Fonts\TheSnB5_.ttf
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\Content\Fonts\TheSnB8_.ttf
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\Content\Fonts\TheSnB6_.ttf
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\Content\Help\VMT_Help.pdf
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\KIPP.KTCData.UI.dll.config
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\KIPP.KTCData.UI.dll
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\KIPP.KTCData.UI.pdb
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\Antlr3.Runtime.dll
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\Microsoft.AI.Agent.Intercept.dll
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\Microsoft.AI.DependencyCollector.dll
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\Microsoft.AI.Web.dll
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\Microsoft.AI.WindowsServer.dll
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\Microsoft.ApplicationInsights.dll
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\Microsoft.Web.Infrastructure.dll
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\Newtonsoft.Json.dll
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\System.Web.Helpers.dll
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\System.Web.Mvc.dll
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\System.Web.Optimization.dll
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\System.Web.Razor.dll
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\System.Web.WebPages.Deployment.dll
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\System.Web.WebPages.dll
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\System.Web.WebPages.Razor.dll
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\WebGrease.dll
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\Newtonsoft.Json.xml
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\System.Web.Helpers.xml
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\System.Web.Mvc.xml
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\System.Web.Optimization.xml
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\System.Web.Razor.xml
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\System.Web.WebPages.xml
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\System.Web.WebPages.Deployment.xml
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\System.Web.WebPages.Razor.xml
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\Antlr3.Runtime.pdb
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\Microsoft.ApplicationInsights.xml
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\Microsoft.AI.DependencyCollector.xml
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\Microsoft.AI.WindowsServer.xml
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\bin\Microsoft.AI.Web.xml
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\obj\Debug\KIPP.KTCData.UI.csproj.CoreCompileInputs.cache
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\obj\Debug\KIPP.KTCData.UI.dll
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\obj\Debug\KIPP.KTCData.UI.pdb
+C:\source\repos\ktc_data\trunk\KIPP.KTCData\KIPP.KTCData.UI\obj\Debug\KIPP.KTCData.UI.csprojResolveAssemblyReference.cache

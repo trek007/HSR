@@ -1,0 +1,64 @@
+﻿@{
+    Layout = "~/Views/Shared/_KIPPLayout.cshtml";
+    ViewBag.TitleValue = "KIPP - HSR";
+
+    var currentControllerName = @HttpContext.Current.Request.RequestContext.RouteData.Values["controller"].ToString();
+    var siteRoot = ViewData["SiteRoot"];
+    var hostUrl = ViewData["HostUrl"];
+    var reportName = ViewData["ReportName"];
+}
+
+<div class="row" style="padding-top:10px;padding-bottom:10px;"></div>
+@*@Html.AntiForgeryToken()*@
+<div class="row justify-content-md-center">
+    <img src="~/Content/Resource/kipptntp.png" alt="tntpLogo" />
+</div>
+<div class="row justify-content-md-center">
+    <h2> TNTP Regional Reports</h2>
+</div>
+<div class="row justify-content-md-center">
+    <div class="col-md-10">
+        <p>
+            These reports are designed for Regional Leaders to review results across all schools in their region.
+            Data will only appear for schools that received at least 4 respondents AND a 40% response rate.
+        </p>
+    </div>
+</div>
+    <div class="row justify-content-md-center">
+        <div class="col-md-2">
+            <a class="view-btn view-btn-survey justify-content-md-center" href="@Url.Action("RegionalTeacherSurveyReports", @currentControllerName)">
+                <h2 class="d-flex align-items-center">Teacher Survey Report</h2>
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a class="view-btn view-btn-survey justify-content-md-center" href="@Url.Action("RegionalSchoolLeadershipTeamSurvey", @currentControllerName)">
+                <h2 class="d-flex align-items-center">School Leadership Team Survey Report</h2>
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a class="view-btn view-btn-survey justify-content-md-center" href="@Url.Action("RegionalNonteachingSchoolBasedStaffSurvey", @currentControllerName)">
+                <h2 class="d-flex align-items-center">Non-teaching School Based Staff Survey Report</h2>
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a class="view-btn view-btn-survey justify-content-md-center" href="@Url.Action("RegionalStaffSurvey", @currentControllerName)">
+                <h2 class="d-flex align-items-center">Regional Staff Survey Report</h2>
+            </a>
+            <!--<a class="view-btn printable justify-content-md-center" href="@Url.Action("RegionalStaffSurveyPrintableSpring2020", @currentControllerName)">
+            <h2>Spring 2020 Printable Report</h2>
+             </a>-->
+            <a class="view-btn printable justify-content-md-center" href="@Url.Action("RegionalStaffSurveyPrintableFall2019", @currentControllerName)">
+                <h2>Printable Report</h2>
+            </a>
+        </div>
+    </div>
+    <div class="row justify-content-md-center">
+        <div class="col-md-10">
+            @Html.Partial("_SurveyReviewSuggestions")
+        </div>
+    </div>
+
+        <script>
+            $("[name='lnkSUR']").addClass('activeMenu');
+            $("[name='lnkRegional']").addClass('activeSubMenu');
+        </script>

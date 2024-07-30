@@ -1,0 +1,19 @@
+﻿@{
+    Layout = "~/Views/Shared/_KIPPLayout.cshtml";
+    ViewBag.TitleValue = "Not Found";
+}
+
+<div class="row text-center">
+    <div class="col-md-12 mt-md-4">
+        <h1>The page cannot be found.</h1>
+    </div>
+</div>
+
+<div class="row text-center">
+    <div class="col-md-12">
+        <p>
+            With the changes to HSR, the dashboard you are looking for may be at a new URL.
+            Please return to the <a href="@Url.Action("Index", "Home")">main HSR site</a> and navigate to the appropriate dashboard from there.
+        </p>
+    </div>
+</div>

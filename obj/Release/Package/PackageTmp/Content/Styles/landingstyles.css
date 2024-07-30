@@ -1,0 +1,672 @@
+﻿/* CSS Document */
+body {
+    background-color: #E0DEDB !important;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    border: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #2C86B4;
+    text-decoration: none;
+    cursor: pointer;
+    cursor: hand;
+}
+
+
+
+    a:hover {
+        color: #E4A320;
+    }
+
+#footer p {
+    color: #FFFFFF;
+}
+
+/*
+#pagecontent a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 12px;
+}*/
+
+#otherlinks a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+/*
+#pagecontent ul {
+    padding-top: 2px;
+}*/
+
+.white {
+    color: #FFFFFF;
+}
+
+    .white:visited {
+        color: #FFFFFF;
+    }
+
+    .white:hover {
+        color: #E4A320;
+    }
+
+#logo {
+    height:134px;
+    padding: 25px 25px 13px 20px;
+    background-image: url('../Resource/HSR_Banner-01.png');
+    background-size: 1048px 134px;
+    background-repeat: no-repeat;
+}
+
+#otherlinks {
+    padding: 20px 20px 10px 10px;
+}
+
+/*Landing page updates banner styles*/
+#rightbannerblock {
+    height: 233px;
+    margin-top: 10px;
+}
+
+    #rightbannerblock a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url("../Resource/LandingPageImages/HS_noclick.png");
+        background-size: 320px 230px;
+        background-repeat: no-repeat;
+    }
+
+        #rightbannerblock a:hover {
+            background: url("../Resource/LandingPageImages/HS_onclick.png");
+            background-size: 320px 230px;
+            background-repeat: no-repeat;
+        }
+
+#rightbannerblock_lower {
+    position: relative;
+    height: 233px;
+    margin-top: 10px;
+}
+
+    #rightbannerblock_lower a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url("../Resource/LandingPageImages/Stakeholder_noclick.png");
+        background-size: 320px 230px;
+        background-repeat: no-repeat;
+    }
+
+        #rightbannerblock_lower a:hover {
+            background: url("../Resource/LandingPageImages/Stakeholder_onclick.png");
+            background-size: 320px 230px;
+            background-repeat: no-repeat;
+        }
+
+.right div a {
+    display: block;
+}
+
+#rightbannerblock_rightcol a:hover {
+    background: url("../Resource/LandingPageImages/Strong_Transition_Larger_on.png");
+}
+
+#rightbannerblock_leftcol {
+    position: relative;
+    width: 264px;
+    height: 149px;
+    float: left;
+    background: url("../Resource/LandingPageImages/Strong_Transition_Larger_off.png");
+}
+
+#rightbannerblock_leftcol a {
+    /*display:block;*/
+    width: 100%;
+    height: 100%;
+}
+
+    #rightbannerblock_leftcol a:hover {
+        background: url("../Resource/LandingPageImages/Strong_Transition_Larger_on.png");
+    }
+
+#leftbannerblock {
+    height: 233px;
+    margin-top: 10px;
+
+}
+
+    #leftbannerblock a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url("../Resource/LandingPageImages/APM_noclick-01.png");
+        background-size: 320px 230px;
+        background-repeat: no-repeat;
+    }
+
+    #leftbannerblock a:hover {
+        background: url("../Resource/LandingPageImages/APM_onclick.png");
+        background-size: 320px 230px;
+        background-repeat: no-repeat;
+    }
+
+#centerbannerblock {
+    height: 233px;
+    margin-top: 10px;
+}
+    #centerbannerblock a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url("../Resource/LandingPageImages/K8_noclick.png");
+        background-size: 320px 230px;
+        background-repeat: no-repeat;
+    }
+
+    #centerbannerblock a:hover {
+        background: url("../Resource/LandingPageImages/K8_onclick.png");
+        background-size: 320px 230px;
+        background-repeat: no-repeat;
+    }
+
+#leftbannerblock_lower {
+    position: relative;
+    height: 233px;
+    margin-top: 10px;
+}
+
+    #leftbannerblock_lower a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url("../Resource/LandingPageImages/Student Enrollment_noclick.png");
+        background-size: 320px 230px;
+        background-repeat: no-repeat;
+    }
+
+        #leftbannerblock_lower a:hover {
+            background: url("../Resource/LandingPageImages/Student Enrollment_onclick.png");
+            background-size: 320px 230px;
+            background-repeat: no-repeat;
+        }
+
+#links_col1 {
+    position: relative;
+    width: 117px;
+    height: 180px;
+}
+    #links_col1 a {
+        background-image: url('../Resource/LandingPageImages/FooterImages/KIPP_noclick.png');
+        background-size: 140px 160px;
+        background-repeat:no-repeat;
+    }
+
+    #links_col1 a:hover {
+        background-image: url('../Resource/LandingPageImages/FooterImages/KIPP_onclick.png');
+    }
+
+#links_col2 {
+    position: relative;
+    width: 117px;
+    height: 180px;
+}
+
+    #links_col2 a {
+        background-image: url('../Resource/LandingPageImages/FooterImages/KIPPShare_noclick.png');
+        background-size: 140px 160px;
+        background-repeat:no-repeat;
+    }
+
+            #links_col2 a:hover {
+            background-image: url('../Resource/LandingPageImages/FooterImages/KIPPShare_onclick.png');
+        }
+
+#links_col3 {
+    position: relative;
+    width: 117px;
+    height: 180px;
+}
+
+    #links_col3 a {
+        background-image: url('../Resource/LandingPageImages/KIPP Forward Data_noclick.png');
+        background-size: 140px 160px;
+        background-repeat: no-repeat;
+    }
+
+        #links_col3 a:hover {
+            background-image: url('../Resource/LandingPageImages/KIPP Forward Data_onclick.png');
+        }
+
+#links_col4 {
+    position: relative;
+    width: 117px;
+    height: 180px;
+}
+
+    #links_col4 a {
+        background-image: url('../Resource/LandingPageImages/FooterImages/TechSupport_noclick-01.png');
+        background-size: 140px 160px;
+        background-repeat: no-repeat;
+    }
+
+        #links_col4 a:hover {
+            background-image: url('../Resource/LandingPageImages/FooterImages/TechSupport_onclick.png');
+        }
+
+
+#links_col5 {
+    position: relative;
+    width: 117px;
+    height: 180px;
+}
+
+    #links_col5 a {
+        background-image: url('../Resource/LandingPageImages/FooterImages/Feedback_noclick.png');
+        background-size: 140px 160px;
+        background-repeat: no-repeat;
+    }
+
+        #links_col5 a:hover {
+            background-image: url('../Resource/LandingPageImages/FooterImages/Feedback_onclick.png');
+        }
+
+#linktext {
+    position: absolute;
+    bottom: 1.3em;
+    left: 1.3em;
+    width: 160px;
+    color: #A6A6A6;
+    line-height: 1.1em;
+    font-size: 11px;
+}
+
+/*End landing page update banner styles*/
+#mainoffice {
+    position: relative;
+    width: 408px;
+    height: 229px;
+    background: url("../Resource/LandingPageImages/Student_Progress_Summary_off.png");
+}
+
+    #mainoffice a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+        #mainoffice a:hover {
+            background: url("../Resource/LandingPageImages/Student_Progress_Summary_on.png");
+        }
+
+    #mainoffice p {
+        position: absolute;
+        font-style: italic;
+        bottom: 4em;
+        left: 1.7em;
+        width: 250px;
+        color: #fff;
+        font-size: 14px;
+    }
+
+#classroom {
+    position: relative;
+    width: 408px;
+    height: 229px;
+    background: url("../Resource/LandingPageImages/Individual_Student_View_off.png");
+}
+
+    #classroom a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+        #classroom a:hover {
+            background: url("../Resource/LandingPageImages/Individual_Student_View_on.png");
+        }
+
+
+    #classroom p {
+        position: absolute;
+        font-style: italic;
+        bottom: 4em;
+        left: 2em;
+        width: 200px;
+        color: #fff;
+        font-size: 14px;
+    }
+
+#mainoffice1 {
+    position: relative;
+    width: 408px;
+    height: 229px;
+    background: url("../Resource/LandingPageImages/Regional_Progress_Summary_off.png");
+}
+
+    #mainoffice1 a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+        #mainoffice1 a:hover {
+            background: url("../Resource/LandingPageImages/Regional_Progress_Summary_on.png");
+        }
+
+    #mainoffice1 p {
+        position: absolute;
+        font-style: italic;
+        bottom: 4em;
+        left: 1.7em;
+        width: 250px;
+        color: #fff;
+        font-size: 14px;
+    }
+
+#classroom1 {
+    position: relative;
+    width: 408px;
+    height: 229px;
+    background: url("../Resource/LandingPageImages/Network_Comparison_off.png");
+}
+
+    #classroom1 a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+        #classroom1 a:hover {
+            background: url("../Resource/LandingPageImages/Network_Comparison_on.png");
+        }
+
+
+    #classroom1 p {
+        position: absolute;
+        font-style: italic;
+        bottom: 4em;
+        left: 2em;
+        width: 200px;
+        color: #fff;
+        font-size: 14px;
+    }
+
+
+.gratitude_over {
+    background: url('file:///images/gratitude_over.png');
+}
+
+.gratitude_off {
+    background: url('file:///images/gratitude_off.png');
+}
+
+
+#iconbackground {
+    background-color: #969696;
+}
+
+#wrapper {
+    margin: 0 auto;
+    height: 800px;
+    width: 1050px;
+}
+
+#header {
+    background-color: #005994;
+    height: 134px;
+}
+
+#banner {
+    background-color: #FFFFFF;
+    height: 775px;
+}
+
+#footer {
+    background-color: #969696;
+    height: 200px;
+    margin-left: 0px !important;
+    margin-right:0px !important;
+}
+/*
+pagecontent td {
+    width: 185px;
+}*/
+
+.right {
+    float: right;
+    width: 552px;
+    margin-left: 24px;
+    margin-right: 10px;
+}
+
+.left {
+    float: left;
+    margin-left: 20px
+}
+
+.horizontaldottedtop {
+    margin: 0 0 0 0;
+}
+
+.horizontaldotted {
+    margin: 0 0 0 0;
+}
+
+.header-assessments {
+    background-image: url('../Resource/LandingPageImages/Assessments_Banner.png');
+    background-position: center;
+    background-repeat: no-repeat; /* for vertical repeat */
+    background-repeat: no-repeat; /* for horizontal repeat */
+    height: 30px;
+    background-size: 1050px 30px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.header-student-data {
+    background-image: url('../Resource/LandingPageImages/StudentData_Banner.png');
+    background-position: center;
+    background-repeat: no-repeat; /* for vertical repeat */
+    background-repeat: no-repeat; /* for horizontal repeat */
+    height: 30px;
+    background-size: 1050px 30px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+
+/*Bootstrap margin override*/
+.row {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+
+.col1 {
+    float: left;
+    width: 185px;
+    margin: 10px 12px 5px 16px;
+}
+
+.col2 {
+    float: left;
+    width: 185px;
+    margin: 10px 12px 5px 16px;
+}
+
+.col3 {
+    float: left;
+    width: 185px;
+    margin: 10px 12px 5px 16px;
+}
+
+.col4 {
+    float: left;
+    width: 160px;
+    margin: 10px 12px 5px 16px;
+}
+
+#footer a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#otherlinks a {
+    padding-bottom: 5px;
+}
+
+#access {
+    position: relative;
+    width: 200px;
+    height: 192px;
+    background: url("../Resource/LandingPageImages/To%20and%20Through_off.png");
+}
+
+    #access a:hover {
+        background: url("../Resource/LandingPageImages/To%20and%20Through_on.png");
+    }
+
+    #access p {
+        position: absolute;
+        bottom: 1.3em;
+        left: 1.3em;
+        width: 160px;
+        color: #A6A6A6;
+        line-height: 1.1em;
+        font-size: 11px;
+    }
+
+#events {
+    position: relative;
+    width: 200px;
+    height: 192px;
+    background: url("../Resource/LandingPageImages/GuidingQuestions_off.png");
+}
+
+    #events a:hover {
+        background: url("../Resource/LandingPageImages/GuidingQuestions_on.png");
+    }
+
+    #events p {
+        position: absolute;
+        bottom: 1.3em;
+        left: 1.3em;
+        width: 160px;
+        color: #A6A6A6;
+        line-height: 1.1em;
+        font-size: 11px;
+    }
+
+#getstarted {
+    position: relative;
+    width: 200px;
+    height: 192px;
+    background: url('file:///images/getstarted_off.png');
+}
+
+    #getstarted a:hover {
+        background: url('file:///images/getstarted_on.png');
+    }
+
+    #getstarted p {
+        position: absolute;
+        bottom: 1.3em;
+        left: 1.3em;
+        width: 160px;
+        color: #A6A6A6;
+        line-height: 1.1em;
+        font-size: 11px;
+    }
+
+#brand {
+    position: relative;
+    width: 200px;
+    height: 192px;
+    background: url("../Resource/LandingPageImages/feedback_off.png");
+}
+
+
+
+#brand a:hover {
+    background: url("../Resource/LandingPageImages/feedback_on.png");
+}
+
+#brand p {
+    position: absolute;
+    bottom: 1.3em;
+    left: 1.3em;
+    width: 160px;
+    color: #A6A6A6;
+    line-height: 1.1em;
+    font-size: 11px;
+}
+
+
+#dataportal {
+    position: relative;
+    width: 200px;
+    height: 192px;
+    background: url('file:///images/dataportal_off.png');
+}
+
+    #dataportal a:hover {
+        background: url('file:///images/dataportal_on.png');
+    }
+
+    #dataportal p {
+        position: absolute;
+        bottom: 1.3em;
+        left: 1.3em;
+        width: 160px;
+        color: #A6A6A6;
+        line-height: 1.1em;
+        font-size: 11px;
+    }
+
+#feedback {
+    position: relative;
+    width: 200px;
+    height: 192px;
+    background: url('file:///images/feedback_off.png');
+}
+
+    #feedback a:hover {
+        background: url('file:///images/feedback_on.png');
+    }
+
+    #feedback p {
+        position: absolute;
+        bottom: 1.3em;
+        left: 1.3em;
+        width: 160px;
+        color: #A6A6A6;
+        line-height: 1.1em;
+        font-size: 11px;
+    }
+
+.clear {
+    clear: both;
+}
+
+#gratitudebanner {
+    margin: 11px 0 0 0;
+}
+
+/*.horizontaldotted {
+	background-image:url(/images/horizontal_grey.png);
+	background-repeat:no-repeat;
+	width:821px;
+}*/

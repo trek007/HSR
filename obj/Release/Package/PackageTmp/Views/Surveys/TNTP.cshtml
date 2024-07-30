@@ -1,0 +1,205 @@
+﻿@{
+    Layout = "~/Views/Shared/_KIPPLayout.cshtml";
+    ViewBag.TitleValue = "KIPP - HSR";
+
+    var currentControllerName = @HttpContext.Current.Request.RequestContext.RouteData.Values["controller"].ToString();
+    var currentEnvironment = ViewData["CurrentEnvironment"].ToString();
+    var siteRoot = ViewData["SiteRoot"];
+    var hostUrl = ViewData["HostUrl"];
+    var reportName = ViewData["ReportName"];
+}
+
+<div class="row" style="padding-top:10px;padding-bottom:10px;"></div>
+@*@Html.AntiForgeryToken()*@
+<div class="row justify-content-md-center">
+    <img src="~/Content/Resource/kipptntp.png" alt="tntpLogo" />
+</div>
+<!--<div class="row justify-content-md-center">
+    <h2> TNTP School Reports</h2>
+</div>
+<div class="row justify-content-md-center">
+    <div class="col-md-10">
+        <p>
+            These reports are designed for School Leaders to review results from a single school. Data will only
+            appear in each report below for schools that received at least 4 respondents AND a 40% response rate.
+            If you have access to more than one school, you will need to first choose your school on the Select a
+            School tab (otherwise the School Report displays the average of all schools that you have permission
+            to view).
+        </p>
+    </div>
+</div>-->
+<!--<div class="row justify-content-md-center">-->
+
+<div class="row justify-content-md-center">
+    <div class="col-md-3">
+        <div class="vertical-margin justify-content-md-center">
+            <!--<img src="~/Content/Resource/School Report.png" class="rounded mx-auto d-block" />-->
+            <img src="~/Content/Resource/School Report (1).png" class="rounded mx-auto d-block" />
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="vertical-margin justify-content-md-center">
+            <img src="~/Content/Resource/Region Report.png" class="rounded mx-auto d-block" />
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="vertical-margin justify-content-md-center">
+            <img src="~/Content/Resource/Match Counselor Report.png" class="rounded mx-auto d-block" />
+        </div>
+    </div>
+</div>
+
+<div class="row justify-content-md-center">
+    <div class="col-md-3">
+        <div class="row justify-content-md-center">
+            <h3 class="d-flex align-items-center">School Report</h3>
+        </div>
+
+        <p>
+            <b>Results for school leadership team, school support staff, and teachers. </b>Best for users who have access to one school.
+        </p>
+    </div>
+    <div class="col-md-3">
+        <div class="row justify-content-md-center">
+            <h3 class="d-flex align-items-center">Region Report</h3>
+        </div>
+
+        <p>
+            <b>
+                Results for regional staff, school leadership team, school support staff, and teachers.
+            </b> Best for users who have region access or access to multiple schools. Regional staff results only accessible to users with region access. Print report contains regional staff results only.
+        </p>
+    </div>
+    <div class="col-md-3">
+        <div class="row justify-content-md-center">
+            <h3 class="d-flex align-items-center">Match Counselor Report</h3>
+        </div>
+
+        <p>
+            <b>Results for match counselors.</b> Accessible to KIPP Foundation staff only.
+        </p>
+    </div>
+</div>
+
+<div class="row justify-content-md-center">
+    <div class="col-md-3">
+        <a class="view-btn justify-content-md-center" href="@Url.Action("TNTPSchool", @currentControllerName)">
+            <h2 class="d-flex align-items-center"> View Report</h2>
+        </a>
+        <a class="view-btn justify-content-md-center" href="@Url.Action("TNTPSchoolPrintable", @currentControllerName)">
+            <h2 class="d-flex align-items-center"> Print Report</h2>
+        </a>
+    </div>
+    <div class="col-md-3">
+        <a class="view-btn justify-content-md-center" href="@Url.Action("TNTPRegion", @currentControllerName)">
+            <h2 class="d-flex align-items-center"> View Report</h2>
+        </a>
+        <a class="view-btn justify-content-md-center" href="@Url.Action("TNTPRegionPrintable", @currentControllerName)">
+            <h2 class="d-flex align-items-center"> Print Report</h2>
+        </a>
+    </div>
+    <div class="col-md-3">
+        <a class="view-btn  justify-content-md-center" href="@Url.Action("TNTPMatchCounselor", @currentControllerName)">
+            <h2 class="d-flex align-items-center"> View Report</h2>
+        </a>
+    </div>
+</div>
+
+<div class="row justify-content-md-center">
+    <div class="col-md-11">
+        <div class="separator"></div>
+    </div>
+</div>
+
+
+<div class="row justify-content-md-center list-info">
+    <div class="col-md-4">
+        <div class="col-md-3">
+            <img class="list-info-image" src="~/Content/Resource/Resources.png" />
+        </div>
+        <div class="col-md-9">
+            <h3 class="list-info-header-left"><b>Resources</b></h3>
+            <!-- <p class="list-info-body-left">
+        Use these resources to support the strategic use of survey data
+    </p>-->
+            @Html.Partial("_SurveyReviewSuggestions")
+        </div>
+
+    </div>
+    <div class="col-md-5">
+        <div class="row">
+            <div class="col-md-2">
+                <!-- <img class="list-info-image" src="~/Content/Resource/Historical Reports.png" />-->
+                <img class="list-info-image" src="~/Content/Resource/Historical Reports (1).png" />
+            </div>
+            <div class="col-md-6">
+                <h3 class="list-info-header"><b>Historical Reports</b></h3>
+                <!--<p class="list-info-body">
+        View historical reports
+    </p>-->
+                <fieldset>
+                    Choose Report Type: <select id="ReportType" name="ReportType">
+                        <option value="school" selected="selected">School Reports</option>
+                        <option value="region">Region Reports</option>
+                        <option value="foundation">Foundation Reports</option>
+                    </select>
+                </fieldset>
+                <ul class="content-bullet">
+                    <li class="school">
+                        <a href="@Url.Action("TeacherSurveyReports", "Surveys")" target="_self">Teacher Report</a>
+                    </li>
+                    <li class="school">
+                        <a href="@Url.Action("SchoolLeadershipTeamSurvey", "Surveys")" target="_self">School Leadership Team Report</a>
+                    </li>
+                    <li class="school">
+                        <a href="@Url.Action("NonteachingSchoolBasedStaffSurvey", "Surveys")" target="_self">Non-Teaching School-Based Staff Report</a>
+                    </li>
+                    <li class="region">
+                        <a href="@Url.Action("RegionalTeacherSurveyReports", "Surveys")" target="_self">Teacher Report</a>
+                    </li>
+                    <li class="region">
+                        <a href="@Url.Action("RegionalSchoolLeadershipTeamSurvey", "Surveys")" target="_self">School Leadership Team Report</a>
+                    </li>
+                    <li class="region">
+                        <a href="@Url.Action("RegionalNonteachingSchoolBasedStaffSurvey", "Surveys")" target="_self">Non-Teaching School-Based Staff Report </a>
+                    </li>
+                    <li class="region">
+                        <a href="@Url.Action("RegionalStaffSurvey", "Surveys")" target="_self">Regional Staff Report</a>
+                    </li>
+                    <li class="foundation">
+                        <a href="@Url.Action("FoundationSchoolLeadershipTeamSurvey", "Surveys")" target="_self">School Leadership Team Report </a>
+                    </li>
+                    <li class="foundation">
+                        <a href="@Url.Action("FoundationRegionalStaffSurvey", "Surveys")" target="_self">Regional Staff Report</a>
+                    </li>
+                    <li class="foundation">
+                        <a href="@Url.Action("MatchCounselors", "Surveys")" target="_self">Match Counselor Report</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-md-center">
+    <div class="col-md-5">
+        <!--White space-->
+    </div>
+    <div class="col-md-5">
+
+    </div>
+</div>
+<div class="row justify-content-md-center">
+    <div class="col-md-5">
+        
+    </div>
+    <div class="col-md-5">
+
+    </div>
+</div>
+
+
+
+<script>
+    $("[name='lnkSUR']").addClass('activeMenu');
+    $("[name='lnkTNTP']").addClass('activeSubMenu');
+</script>

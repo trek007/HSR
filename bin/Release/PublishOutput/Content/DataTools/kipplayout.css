@@ -1,0 +1,98 @@
+﻿
+
+
+
+.navbar {
+    color: white;
+    font-family: 'TheSans B8 ExtraBold','Trebuchet MS';
+    font-weight: 600;
+    background-color: transparent;
+    font-size: 20px;
+    vertical-align: middle;
+    height: 100%;
+    padding-top: 25px;
+}
+
+.navbar-default {
+    border: 0;
+}
+
+    .navbar-default .navbar-nav > li > a {
+        color: white;
+        /*font-family: 'TheSans B8 ExtraBold';*/
+        font-family: "Whitney A","Whitney B",Helvetica Neue,Helvetica,Arial,sans-serif;
+        font-size: 20px;
+        /*font-weight: 600;*/
+    }
+
+        .navbar-default .navbar-nav > li > a:hover {
+            color: white;
+            border-bottom: 2px #bcd631 solid;
+        }
+
+    .navbar-default .navbar-nav > li.active a {
+        /*color: white;*/
+        /*font-family: 'TheSans B8 ExtraBold';
+                                font-weight: 600;*/
+        font-family: "Whitney A","Whitney B",Helvetica Neue,Helvetica,Arial,sans-serif;
+        font-size: 20px;
+        border-color: #bcd631;
+        color: #bcd631;
+        border-bottom: 2px #bcd631 solid;
+    }
+
+.Padding {
+    padding-left: 20px;
+}
+
+.UserInfo {
+    color: white;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, caption, h1, h2, h3, h4, h5, h6, html, body {
+    font-family: 'TheSans B5 Plain','Trebuchet MS'; /*,'Whitney Book',"Whitney A","Whitney B",Helvetica Neue,Helvetica,Arial,sans-serif;*/
+}
+
+label {
+    font-family: 'TheSans B8 ExtraBold','Trebuchet MS'; /*,'Whitney Medium''Whitney Book',"Whitney A","Whitney B",Helvetica Neue,Helvetica,Arial,sans-serif;*/
+}
+
+.no-data {
+    color: red;
+}
+
+.vcenter {
+    margin-top: 5px;
+    vertical-align: middle;
+}
+
+.activeMenu a {
+    color: #bcd631 !important;
+    border-bottom: 2px #bcd631 solid !important;
+}
+
+.btn-primary {
+    color: #163659;
+    background-color: #BCD631;
+    border: 1px solid #BCD631;
+    font-weight: 600;
+}
+
+    .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+        color: white;
+        background-color: #98B025;
+        border: 1px solid #BCD631;
+    }
+
+#btnSettings, #btnHelp, #btnLogout {
+    color: white;
+    text-decoration: none;
+}
+
+    #btnSettings:hover, #btnHelp:hover, #btnLogout:hover {
+        color: #BCD631;
+    }
+
+

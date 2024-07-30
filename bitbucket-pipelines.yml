@@ -1,0 +1,28 @@
+pipelines:
+  branches:
+    release/DEV-HSR:
+      - step:
+          name: Build and Publish
+          runs-on:
+            - self.hosted
+            - windows
+          caches:
+            - dotnetcore
+          script:
+            - echo "Restoring NuGet packages..."
+            - C:\\Tools\\nuget.exe restore HSR.sln
+
+            - echo "Building and publishing solution..."
+            # Run MSBuild with PublishProfile argument
+            - Start-Process -FilePath "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\MSBuild.exe" -ArgumentList "HSR.sln /p:Configuration=Release /p:DeployOnBuild=true /p:PublishProfile=DevHSR" -Wait
+
+            - echo "Publish completed. Artifacts are available for deployment."
+
+            - echo "Listing contents of the Release folder..."
+            - powershell -Command "Get-ChildItem -Path '.\\bin\\Release' -Recurse | Format-Table FullName, Length -AutoSize"
+
+            - echo "Copying build output to destination folder..."
+            - powershell -Command "Copy-Item -Path '.\\bin\\Release\\*' -Destination 'E:\\test-HSR\\test' -Recurse -Force"
+
+            - echo "Listing contents of the destination folder..."
+            - powershell -Command "Get-ChildItem -Path 'E:\\test-HSR\\test' -Recurse | Format-Table FullName, Length -AutoSize"

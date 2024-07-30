@@ -1,0 +1,62 @@
+﻿@{
+    Layout = "~/Views/Shared/_KIPPLayout.cshtml";
+    ViewBag.TitleValue = "KIPP - HSR";
+
+    var currentControllerName = @HttpContext.Current.Request.RequestContext.RouteData.Values["controller"].ToString();
+    var siteRoot = ViewData["SiteRoot"];
+    var hostUrl = ViewData["HostUrl"];
+    var reportName = ViewData["ReportName"];
+}
+
+<div class="row" style="padding-top:10px;padding-bottom:10px;">    </div>
+    @*@Html.AntiForgeryToken()*@
+    <div class="row justify-content-md-center">
+        <img src="~/Content/Resource/kipptntp.png" alt="tntpLogo" />
+    </div>
+    <div class="row justify-content-md-center">
+        <h2> TNTP Foundation Reports</h2>
+    </div>
+    <div class="row justify-content-md-center">
+        <div class="col-md-10">
+            <p>
+                These reports are designed for Regional Leaders to review results across all schools in their region.
+                Data will only appear for schools that received at least 4 respondents AND a 40% response rate.
+            </p>
+        </div>
+    </div>
+    <div class="row justify-content-md-center">
+        <!--<div class="col-md-2">
+         <a class="view-btn view-btn-survey justify-content-md-center" href="@Url.Action("FoundationTeacherSurveyReports", @currentControllerName)">
+             <h2 class="d-flex align-items-center">Teacher Survey Report</h2>
+         </a>
+     </div>-->
+        <div class="col-md-2">
+            <a class="view-btn view-btn-survey justify-content-md-center" href="@Url.Action("FoundationSchoolLeadershipTeamSurvey", @currentControllerName)">
+                <h2 class="d-flex align-items-center">School Leadership Team Survey Report</h2>
+            </a>
+        </div>
+        <!--<div class="col-md-2">
+        <a class="view-btn view-btn-survey justify-content-md-center" href="@Url.Action("FoundationNonteachingSchoolBasedStaffSurvey", @currentControllerName)">
+            <h2 class="d-flex align-items-center">Non-teaching School Based Staff Survey Report</h2>
+        </a>
+    </div>-->
+        <div class="col-md-2">
+            <a class="view-btn view-btn-survey justify-content-md-center" href="@Url.Action("FoundationRegionalStaffSurvey", @currentControllerName)">
+                <h2 class="d-flex align-items-center">Regional Staff Survey Report</h2>
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a class="view-btn view-btn-survey justify-content-md-center" href="@Url.Action("MatchCounselors", @currentControllerName)">
+                <h2 class="d-flex align-items-center">Match Counselors</h2>
+            </a>
+        </div>
+    </div>
+        <div class="row justify-content-md-center">
+            <div class="col-md-10">
+                @Html.Partial("_SurveyReviewSuggestions")
+            </div>
+        </div>
+        <script>
+            $("[name='lnkSUR']").addClass('activeMenu');
+            $("[name='lnkFoundation']").addClass('activeSubMenu');
+        </script>

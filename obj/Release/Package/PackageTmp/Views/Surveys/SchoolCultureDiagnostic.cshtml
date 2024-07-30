@@ -1,0 +1,33 @@
+﻿@{
+    Layout = "~/Views/Shared/_KIPPLayout.cshtml";
+    ViewBag.TitleValue = "KIPP - HSR";
+    var siteRoot = ViewData["SiteRoot"];
+    var hostUrl = ViewData["HostUrl"];
+    var reportName = ViewData["ReportName"];
+    var friendlyName = ViewData["FriendlyName"];
+}
+
+<!--<div class="row">
+    <div class="col-md-6 page-header">
+        <h1>@friendlyName</h1>
+    </div>
+</div>-->
+<div class="row" style="padding-top:10px;padding-bottom:10px;">
+    @*@Html.AntiForgeryToken()*@
+    <div class='tableauPlaceholder' style='width: 100%; height: 3036px;'>
+        <object class='tableauViz' width='100%' height='3036' style='display:none;'>
+            <param name='host_url' value='@Html.Encode(@hostUrl)' />
+            <param name='site_root' value='@Html.Encode(@siteRoot)' />
+            <param name='name' value='@Html.Encode(@reportName)' />
+            <param name='tabs' value='yes' />
+            <param name='toolbar' value='yes' />
+            <param name='refresh' value='yes' />
+            <param name='showShareOptions' value='true' />
+        </object>
+    </div>
+</div>
+
+<script>
+    $("[name='lnkSUR']").addClass('activeMenu');
+    $("[name='lnkSCD']").addClass('activeSubMenu');
+</script>

@@ -1,0 +1,118 @@
+﻿@model KIPP.DataTools.BL.Model.VmtCommonModel
+@{
+    Layout = "~/Views/Shared/_KIPPLayout.cshtml";
+    ViewBag.TitleValue = "KIPP - Value Mapping Tool";
+}
+
+
+<div class="row" style="padding-top:10px;padding-bottom:10px;">
+    <div class="col-md-1 text-center vcenter"><label>Region</label></div>
+    <div class="col-md-3">
+        @(Html.Kendo().DropDownList()
+                  .Name("ddlRegion")
+                  .DataTextField("RegionName")
+                  .DataValueField("Id")
+                  .BindTo(Model.LstRegions)
+                  .Events(e => e
+                      .Change("dropdownlistchange")
+                      .Select("dropdownlistselect")
+                  )
+                  .HtmlAttributes(new { style = "width:80%" })
+                  .SelectedIndex(0))
+    </div>
+    <div class="col-md-3"></div>
+    <div class="col-md-2">
+        <div class="alert alert-success" id="savework-alert">
+            <strong>Successfully saved.</strong>
+        </div>
+        <div class="alert alert-danger" id="savework-alert-failure">
+            <strong>Data is not updated.</strong>
+        </div>
+        <div class="alert alert-success" id="submit-alert">
+            <strong>Successfully submitted.</strong>
+        </div>
+    </div>
+
+    <div class="col-md-1"><input type="button" class="btn" name="btnSaveWork" value="Save Work" title="Save work as draft" style="border:1px solid #C5C5C5" /></div>
+    <div class="col-md-1"><input type="button" class="btn btn-primary" name="btnSubmit" value="Submit" /></div>
+    <div class="col-md-1"></div>
+
+</div>
+
+<div style="height: 100%">
+
+    @(Html.Kendo().Grid<KIPP.DataTools.BL.Model.VmtModel>()
+          .Name("grdVMT")
+          .Events(e => e.DataBound("onDataBound"))
+          .Columns(columns =>
+          {
+              columns.Template(e => { }).Title("Action").ClientTemplate(
+                  Html.RadioButton("rbtn#:data.DomainName##:data.Id#", "1", new { id = "rbtnReview", disabled = "disabled" }) + " Review" +
+                  "<span style='padding-left:10px;'></span>" +
+                  Html.RadioButton("rbtn#:data.DomainName##:data.Id#", "2", new { id = "rbtnRelease", disabled = "disabled" }) + "<span id ='txtRelease'> Release</span>" +
+                  "<span style='padding-left:10px;'></span>" +
+                  Html.RadioButton("rbtn#:data.DomainName##:data.Id#", "3", new { id = "rbtnApprove", disabled = "disabled" }) + " Approve").Locked(true).Lockable(false);
+
+              columns.Bound(m => m.DomainName).Title("Field Name").Locked(true).Lockable(false);
+              columns.Bound(m => m.SourceValue).Title("Regional Label").Locked(true).Lockable(false);//Incoming Domain Value
+
+              columns.Bound(m => m.PrimaryStatus).Title("Domain Value Status").Locked(true).Lockable(false);
+
+              columns.Template(e => { }).Title("Foundation Standardized Label").ClientTemplate(
+              Html.DropDownList("ddlDomainMasters", new List<SelectListItem> { new SelectListItem { Text = "-- Select --", Value = "-1" } }, new { @class = "form-control btn btn-default dropdown-toggle", style = "float:left;width:85%; height:15px;" }).ToHtmlString()).Locked(true).Lockable(false);//Master Domain Values
+
+              columns.Template(e => { }).Title("New Value Being Suggested").ClientTemplate(
+                      Html.TextBox("tbxNew", "#=NewValue#", new { @class = "form-control", style = "float:left;width:85%; height:15px;", disabled = "disabled", maxlength = 50 }).ToHtmlString()).Width(250);
+
+              columns.Bound(m => m.StatusText).Title("Status");
+
+              columns.Bound(m => m.FoundationNotes).Title("Foundation Notes").ClientTemplate(
+                  Html.TextArea("txtFoundationNotes", "#=FoundationNotes#", 1, 25, new { id = "txtFoundationNotes", style = "resize:none;height:23px;", maxlength = 800 }).ToHtmlString());
+
+              columns.Bound(m => m.RegionalNotes).Title("Notes").ClientTemplate(
+                  Html.TextArea("txtRegionalNotes", "#=RegionalNotes#", 1, 25, new { id = "txtRegionalNotes", style = "resize:none;height:23px;", maxlength = 800 }).ToHtmlString());
+
+              columns.Bound(m => m.ModifiedByName).Title("Updated By");
+
+              columns.Bound(m => m.ModifiedOn).Title("Updated Date").HtmlAttributes(new { style = "text-align:right" });
+              columns.Bound(m => m.Id).Hidden();
+              columns.Bound(m => m.StatusId).Hidden();
+              columns.Bound(m => m.LstDomainMasterValueModel).Hidden();
+              columns.Bound(m => m.DomainMastersValue).Hidden();
+              columns.Bound(m => m.isDirty).Hidden();
+              columns.Bound(m => m.DomainId).Hidden();
+              columns.Bound(m => m.FoundationActionValue).Hidden();
+              columns.Bound(m => m.RegionActionValue).Hidden();
+
+          })
+          .HtmlAttributes(new { style = "height: 100%;font-family:'TheSans B5 Plain';" })//background-color:#F4EFEB;
+          .Scrollable()
+          .Resizable(resize => resize.Columns(true))
+          .Pageable(pageable => pageable
+              .Input(true)
+              .PageSizes(true)
+              .ButtonCount(5))
+
+          .DataSource(dataSource => dataSource
+              .Ajax()
+              .ServerOperation(true)
+              .Read(read => read.Action("LoadVmtRecords", "Vmt").Data("additionalInfo"))
+              .PageSize(10)
+          )
+    )
+</div>
+
+<div class="row" style="padding-top:10px;">
+    <div class="col-md-9"></div>
+    <div class="col-md-1"><input type="button" class="btn" name="btnSaveWorkBottom" value="Save Work" title="Save work as draft" style="border:1px solid #C5C5C5" /></div>
+    <div class="col-md-1"><input type="button" class="btn btn-primary" name="btnSubmitBottom" value="Submit" /></div>
+    <div class="col-md-1">
+        <input type="hidden" value="@Session["UserRole"]" id="hdnUserRole" />
+    </div>
+</div>
+
+@Styles.Render("~/bundles/vmt/css")
+
+@Scripts.Render("~/bundles/vmt")
+
+

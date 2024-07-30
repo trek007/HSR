@@ -1,0 +1,84 @@
+﻿@model KIPP.DataTools.BL.Model.UserModel
+
+@{
+    ViewBag.TitleValue = "User Role Manager";
+    Layout = "~/Views/Shared/_KIPPLayout.cshtml";
+}
+<div class="row" style="padding-top:10px;padding-bottom:10px;">
+    <div class="col-md-2"></div>
+    <div style="color:#173459;font-family:TheSans B8 ExtraBold;font-weight:bold;" class="col-md-2">
+        <h4>Manage User Role</h4>
+    </div>
+    <div class="col-md-3"></div>
+    <div class="col-md-2">
+        <div class="alert alert-success" id="save-alert">
+            <strong>Successfully saved.</strong>
+        </div>
+        <div class="alert alert-danger" id="savework-alert-failure">
+            <strong>Data is not updated.</strong>
+        </div>
+    </div>
+    <div class="col-md-1 text-right vcenter"><input type="button" class="btn btn-primary" id="btnSave" style="width:75px;" name="btnSave" value="Save" /></div>
+    <div class="col-md-2"></div>
+</div>
+
+<div class="row" style="height: 100%">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        @(Html.Kendo().Grid<KIPP.DataTools.BL.Model.UserModel>()
+              .Name("UserRoleGrid")
+              .Events(e => e.DataBound("onDataBound"))
+              .Columns(columns =>
+              {
+                  columns.Bound(c => c.UserId).Hidden();
+                  columns.Bound(c => c.ApplicationUserId).Hidden();
+                  columns.Template(c => { })
+                        .Title("Select")
+                        .HtmlAttributes(new { style = "text-align:center;" })
+                        .ClientTemplate("<input type='checkbox' id='chck'/>")
+                        //.HeaderTemplate("<input type='checkbox' id='masterCheckBox' onclick='checkAll(this)'/>")
+                        .Width(70);
+                  columns.Bound(c => c.Name).Title("Name")
+                      .Width(200)
+                  .HeaderHtmlAttributes(new { style = "color:white;text-align:center; height:16px;" });
+                  columns.Template(c => { })
+                      .Title("Role")
+                      .Width(180)
+                      .HeaderHtmlAttributes(new { style = "color:white;text-align:center;" }).ClientTemplate(
+                          Html.DropDownList("ddlOptions", new List<SelectListItem> { new SelectListItem { Text = "", Value = "0", Selected = true }, new SelectListItem { Text = "Administrator", Value = "1" }, new SelectListItem { Text = "Foundation", Value = "2" }, new SelectListItem { Text = "Regional", Value = "3" } }, new { @class = "form-control btn btn-default dropdown-toggle", style = "float:left;width:85%;height:16px;" }).ToHtmlString());
+                  columns.Bound(c => c.UserRegions)
+                  .Title("Access Regions")
+                  .EditorTemplateName("regionEditor").HtmlAttributes(new { id = "regionEditor"});
+                  columns.Bound(c => c.RoleId).Hidden();
+                  columns.Bound(c => c.RegionList).Hidden();
+                  columns.Bound(c => c.AllUserRegions).Hidden();
+              })
+              .HtmlAttributes(new { style = "height:100%;background-color:#F4EFEB;font-family:'TheSans B5 Plain';" })
+              .Pageable(pageable => pageable
+                  .Input(true)
+                  .PageSizes(true)
+                  .ButtonCount(3))
+              .DataSource(dataSource => dataSource
+                  .Ajax()
+                  .Read(read => read.Action("LoadUserRecords", "RoleManager"))
+              )
+              .Pageable()
+              .Scrollable()
+              .Sortable()
+        )
+    </div>
+    <div class="col-md-2"></div>
+</div>
+
+<div class="row" style="padding-top:10px;">
+    <div class="col-md-8"></div>
+    <div class="col-md-1"></div>
+    <div class="col-md-1"></div>
+    <div class="col-md-2">
+        <input type="hidden" value="@Session["UserRole"]" id="hdnUserRole" />
+    </div>
+</div>
+
+@Styles.Render("~/bundles/rolemanager/css");
+
+@Scripts.Render("~/bundles/rolemanager");

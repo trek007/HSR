@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.TitleValue</title>
+    <link rel="icon" href="@Url.Content("~/Content/Resource/KIPP-fav_icon.png")" />
+    <link rel='stylesheet' id='cloud-typography-fonts-css' href='https://cloud.typography.com/6268472/6690772/css/fonts.css?ver=4.7.5' type='text/css' media='all' />
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/kendo")
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/kendo")
+    @Styles.Render("~/Content/kendo/css")
+</head>
+<body style="border:0; padding:0;overflow-x: hidden;">
+    <div class="row" style="background-color: #173459; vertical-align: middle;height:99px">
+        <div class="col-md-3 text-center">
+            <a href="http://www.kipp.org" target="_blank"><img src="~/Content/Resource/KIPP.png" alt="KIPP"></a>
+        </div>
+        @if (HttpContext.Current.User.Identity.IsAuthenticated && Session["UserRole"] != null)
+            {
+            <div class="col-md-6" style="height:100%">
+                <nav class="navbar navbar-default" style="margin-bottom: 0;">
+                    <div class="container-fluid">
+                        <ul class="nav navbar-nav">
+                            <li name="lnkVMT"><a href="#">Field Matching</a></li>
+                            <li name="lnkSMT" class="Padding"><a href="#">Student Matching</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        }
+        else
+        {
+            <div class="col-md-6"></div>
+        }
+
+        @if (HttpContext.Current.User.Identity.IsAuthenticated && Session["UserRole"] != null)
+        {
+            <div class="col-md-3">
+                <p class="UserInfo text-right">
+                    <label>
+                        @HttpContext.Current.User.Identity.Name &nbsp;|&nbsp;
+                        @if (@Session["UserType"].ToString() == "1" || @Session["UserType"].ToString() == "2")
+                        {
+
+                            <a id="btnSettings" href="javascript:void(0)"><span class="glyphicon glyphicon-cog" title="Role Settings"></span></a>
+                            <span>&nbsp;|&nbsp;</span>
+                        }
+                        <a id="btnHelp" href="javascript:void(0)">
+                            <span class="glyphicon glyphicon-question-sign" title="Help"></span>
+                        </a> &nbsp;|&nbsp;
+                        <a id="btnLogout" href="javascript:void(0)"><span class="glyphicon glyphicon-log-out" title="Logout"></span></a>
+                    </label>
+                </p>
+            </div>
+        }
+        else
+        {
+            <div class="col-md-3"></div>
+        }
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+
+     <style>
+        @@font-face {
+            font-family: 'TheSans B5 Plain';
+            src: url('../../Content/Fonts/TheSnB5_.ttf') format('truetype'), url('../../Content/Fonts/TheSansB5Plain.eot'), url('../../Content/Fonts/TheSansB5Plain.woff') format('woff'), url('../../Content/Fonts/TheSansB5Plain.svg') format('svg');
+        }
+
+        @@font-face {
+            font-family: 'TheSans B8 ExtraBold';
+            src: url('../../Content/Fonts/TheSnB8_.ttf') format('truetype'), url('../../Content/Fonts/TheSansB8ExtraBold.eot'), url('../../Content/Fonts/TheSansB8ExtraBold.woff') format('woff'), url('../../Content/Fonts/TheSansB8ExtraBold.svg') format('svg');
+        }
+
+        @@font-face {
+            font-family: 'TheSans B6 SemiBold';
+            src: url('../../Content/Fonts/TheSnB6_.ttf') format('truetype'), url('../../Content/Fonts/TheSansB6SemiBold.eot'), url('../../Content/Fonts/TheSansB6SemiBold.woff') format('woff'), url('../../Content/Fonts/TheSansB6SemiBold.svg') format('svg');
+        }
+
+        @@media only screen and (min-width: 1366px) {
+            body {
+                min-width: 1366px !important; /* suppose you want minimun width of 1000px */
+                width: auto !important; /* Firefox will set width as auto */
+                width: 1366px; /* As IE ignores !important it will set width as 1000px; */
+            }
+        }
+    </style>
+
+    @Styles.Render("~/bundles/kipplayout/css")
+
+    <script>
+
+    $("#btnLogout").click(function () {
+        $.ajax({
+            type: "Get",
+            url: '@Url.Action("Logout","Login")',
+            success: function () {
+                window.location.href = "https://kipp.onelogin.com/client/apps";
+            }
+        });
+    });
+
+    $("[name='lnkVMT']").click(function () {
+
+        $(this).addClass('activeMenu');
+        $("[name='lnkSMT']").removeClass('activeMenu');
+
+        location.href = '@Url.Action("Index", "Vmt")';
+    });
+
+    $("[name='lnkSMT']").click(function () {
+
+        $(this).addClass('activeMenu');
+        $("[name='lnkVMT']").removeClass('activeMenu');
+
+        location.href = '@Url.Action("Index", "Smt")';
+    });
+
+        $("#btnSettings").click(function () {
+                $("[name='lnkVMT']").removeClass('activeMenu');
+                $("[name='lnkSMT']").removeClass('activeMenu');
+                location.href = '@Url.Action("Index", "RoleManager")';
+        });
+
+    $("#btnHelp").click(function (e) {
+        e.preventDefault();
+        var pageName = $(".activeMenu").text();
+        if (pageName === "Field Matching") {
+            window.open("@Url.Content(@"~/Content/help/FMT_Help.pdf")");
+        } else if (pageName === "Student Matching"){
+            window.open("@Url.Content(@"~/Content/help/SMT_Help.pdf")");
+        }
+    });
+
+    </script>
+
+</body>
+</html>

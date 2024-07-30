@@ -1,0 +1,222 @@
+﻿
+
+
+
+.navbar {
+    color: white;
+    font-family: 'TheSans B8 ExtraBold','Trebuchet MS';
+    font-weight: 600;
+    background-color: transparent;
+    font-size: 20px;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.navbar-nav {
+    flex-direction: row !important;
+}
+
+.subnavbar > li > a {
+    color: white;
+    font-size: 18px;
+}
+
+.subnavbar > li > a:hover{
+    color: #17345b !important;
+    border-bottom: 2px #17345b solid !important;
+}
+
+.navbar-default {
+    border: 0;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+    /*font-family: 'TheSans B8 ExtraBold';*/
+    font-family: "Whitney A","Whitney B",Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    /*font-weight: 600;*/
+}
+
+    .navbar-default .navbar-nav > li > a:hover {
+        color: #bcd631;
+        border-bottom: 2px #bcd631 solid;
+    }
+
+.navbar-default .navbar-nav > li.active a {
+    /*color: white;*/
+    /*font-family: 'TheSans B8 ExtraBold';
+                            font-weight: 600;*/
+    font-family: "Whitney A","Whitney B",Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    border-color: #bcd631;
+    color: #bcd631;
+    border-bottom: 2px #bcd631 solid;
+}
+
+.view-btn {
+    border: 2px solid white;
+    display: flex;
+    text-align: center;
+    font-size: 24pt;
+    text-decoration: none;
+    color: #efefef !important;
+    background-color: #255694;
+    margin-top: 10px;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+    .view-btn:hover {
+        background-color: #17345B;
+        text-decoration: none;
+    }
+
+/*a.view-btn > h2{
+    font-weight:bold !important;
+}*/
+
+.view-btn-survey {
+    height: 100px;
+}
+
+p {
+    margin-top: 20px;
+}
+
+ul {
+    list-style: none;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+    ul.content-bullet li::before {
+        content: "\2022";
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+
+fieldset{
+    display:inline !important;
+    margin-top:10px;
+}
+
+.list-info{
+    height:100px;
+}
+
+    .list-info-image {
+        padding-top: 10px;
+    }
+
+    .list-info-header {
+        margin: 10px 0px 10px 0px;
+    }
+
+    .list-info-body {
+        margin: 10px 0px 10px 0px;
+    }
+
+    .list-info-header-left {
+        margin-top: 10px;
+    }
+
+    .list-info-body-left {
+        margin: 10px 0px 10px -25px;
+    }
+
+
+.survey-landing-header {
+    text-decoration: underline;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.survey-landing-bullet {
+    font-weight: bold;
+}
+
+.printable {
+    background-color: #bcd631 !important;
+}
+
+    .printable:hover {
+        background-color: #9ab123 !important;
+    }
+
+
+.separator {
+    border: 2px solid white;
+    display: flex;
+    color: #efefef !important;
+    background-color: #255694;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+}
+
+.Padding {
+    padding-left: 20px;
+}
+
+.vertical-margin {
+    margin: 20px 0px 20px 0px;
+}
+
+.UserInfo {
+    color: white;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, caption, h1, h2, h3, h4, h5, h6, html, body {
+    font-family: 'TheSans B5 Plain','Trebuchet MS'; /*,'Whitney Book',"Whitney A","Whitney B",Helvetica Neue,Helvetica,Arial,sans-serif;*/
+}
+
+label {
+    font-family: 'TheSans B8 ExtraBold','Trebuchet MS'; /*,'Whitney Medium''Whitney Book',"Whitney A","Whitney B",Helvetica Neue,Helvetica,Arial,sans-serif;*/
+}
+
+.no-data {
+    color: red;
+}
+
+.vcenter {
+    margin-top: 5px;
+    vertical-align: middle;
+}
+
+.activeMenu a {
+    color: #bcd631 !important;
+    border-bottom: 2px #bcd631 solid !important;
+}
+
+.activeSubMenu a {
+    color: #17345b !important;
+    border-bottom: 2px #17345b solid !important;
+}
+
+.btn-primary {
+    color: #163659;
+    background-color: #BCD631;
+    border: 1px solid #BCD631;
+    font-weight: 600;
+}
+
+    .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+        color: white;
+        background-color: #98B025;
+        border: 1px solid #BCD631;
+    }
+
+#btnSettings, #btnHelp, #btnLogout {
+    color: white;
+    text-decoration: none;
+}
+
+    #btnSettings:hover, #btnHelp:hover, #btnLogout:hover {
+        color: #BCD631;
+    }
+
+

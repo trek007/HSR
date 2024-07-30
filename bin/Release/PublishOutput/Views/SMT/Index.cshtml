@@ -1,0 +1,123 @@
+﻿
+@model KIPP.DataTools.BL.Model.VmtCommonModel
+
+@{
+    Layout = "~/Views/Shared/_KIPPLayout.cshtml";
+    ViewBag.TitleValue = "KIPP - Student Matching Tool";
+}
+
+<div class="row" style="padding-top:10px;padding-bottom:10px;">
+    @*@Html.AntiForgeryToken()*@
+    <div class="col-md-1 text-right vcenter"><label>Region</label></div>
+    <div class="col-md-3">
+        @(Html.Kendo().DropDownList()
+                  .Name("ddlRegion")
+                  .DataTextField("RegionName")
+                  .DataValueField("Id")
+                  .BindTo(Model.LstRegions)
+                  .Events(e => e
+                      .Change("dropdownlistchange")
+                      .Select("dropdownlistselect")
+                  )
+                  .HtmlAttributes(new { style = "width:80%" })
+                  .SelectedIndex(0))
+    </div>
+    <div class="col-md-3"></div>
+    <div class="col-md-2">
+        <div class="alert alert-success" id="savework-alert">
+            <strong>Successfully saved.</strong>
+        </div>
+        <div class="alert alert-danger" id="savework-alert-failure">
+            <strong>Data is not updated.</strong>
+        </div>
+        <div class="alert alert-success" id="submit-alert">
+            <strong>Successfully submitted.</strong>
+        </div>
+    </div>
+    <div class="col-md-1"><input type="button" class="btn" name="btnSaveWork" value="Save Work" title="Save work as draft" style="border:1px solid #C5C5C5" /></div>
+    <div class="col-md-1"><input type="button" class="btn btn-primary" name="btnSubmit" value="Submit" /></div>
+    <div class="col-md-1"></div>
+
+</div>
+
+
+<div>
+
+    @(Html.Kendo().Grid<KIPP.DataTools.BL.Model.SmtModel>()
+                  .Name("grdSMT")
+                  .Events(e => e.DataBound("onDataBound"))
+                  .Columns(columns =>
+                  {
+                      columns.Template(e => { }).Title("Action")
+                      .ClientTemplate(
+                      Html.RadioButton("rbtn#:data.Id#", "1", new { id = "rbtnReview", disabled = "disabled" }) + " Review" +
+                        "<span style='padding-left:10px;'></span>" +
+                      Html.RadioButton("rbtn#:data.Id#", "2", new { id = "rbtnRelease", disabled = "disabled" }) + "<span id ='txtRelease'> Release</span>" +
+                        "<span style='padding-left:10px;'></span>" +
+                      Html.RadioButton("rbtn#:data.Id#", "3", new { id = "rbtnApprove", disabled = "disabled" }) + " Approve").Locked(true).Lockable(false);
+
+                      columns.Template(e => { })
+                      .Title("&nbsp;&nbsp;&nbsp;Match Status&nbsp;&nbsp;&nbsp;")
+                      .ClientTemplate(
+                      Html.DropDownList("ddlOptions", new List<SelectListItem> { new SelectListItem { Text = "--Select--", Value = "1", Selected = true }, new SelectListItem { Text = "Match", Value = "2" }, new SelectListItem { Text = "No Match", Value = "3" } }, new { @class = "form-control btn btn-default dropdown-toggle", style = "float:left;width:75%;height:13px;" }).ToHtmlString()).Locked(true);
+
+
+                      columns.Bound(m => m.StateStudentId).Title("SIS Student ID").Locked(true);
+                      columns.Bound(m => m.FirstName).Title("&nbsp;First Name&nbsp;").Locked(true);
+                      columns.Bound(m => m.LastName).Title("Last Name").Locked(true);
+
+                      columns.Bound(m => m.Gender).Title("Gender").Locked(true);
+                      columns.Bound(m => m.DateOfBirth).Title("Date of Birth").Locked(true);
+                      columns.Bound(m => m.ClassOf).Title("&nbsp;Cohort&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;").Locked(true);
+                      columns.Bound(m => m.SchoolName).Title("School Name");
+                      columns.Bound(m => m.FirstSchoolYear).Title("First School Year");
+                      columns.Bound(m => m.FirstEntryDate).Title("First Entry Date").HtmlAttributes(new { style = "text-align:right" });
+                      columns.Bound(m => m.FirstEntryGrade).Title("First Entry Grade");
+                      columns.Bound(m => m.FinalSchoolYear).Title("Final School Year");
+                      columns.Bound(m => m.FinalExitDate).Title("Final Exit Date").HtmlAttributes(new { style = "text-align:right" });
+                      columns.Bound(m => m.FinalGrade).Title("Final Grade");
+                      columns.Bound(m => m.StatusText).Title("Cluster Status");
+
+                      columns.Bound(m => m.UpdatedByName).Title("Updated By");
+                      columns.Bound(m => m.UpdatedTimestamp).Title("Updated Date").HtmlAttributes(new { style = "text-align:right" });
+                      columns.Bound(m => m.MatchStep).Title("Match Step");
+
+                      columns.Bound(m => m.BaseRecord).Hidden();
+                      columns.Bound(m => m.StatusId).Hidden();
+                      columns.Bound(m => m.Id).Hidden();
+                      columns.Bound(m => m.MatchClusterKey).Hidden();
+                      columns.Bound(m => m.MatchStatus).Hidden();
+                      columns.Bound(m => m.isDirty).Hidden();
+                      columns.Bound(m => m.FoundationActionValue).Hidden();
+                      columns.Bound(m => m.RegionActionValue).Hidden();
+                  })
+          .HtmlAttributes(new { style = "height: 100%;background-color:#F4EFEB;font-family:'TheSans B5 Plain';" })
+          .Scrollable()
+          //.Selectable()
+          .Resizable(resize => resize.Columns(true))
+          .Pageable(pageable => pageable
+              .Input(true)
+              .PageSizes(true)
+              .ButtonCount(2)
+              .Messages(message => message.ItemsPerPage("clusters per page")))
+          .DataSource(dataSource => dataSource
+              .Ajax()
+              .Read(read => read.Action("LoadSmtRecords", "Smt").Data("additionalInfo"))
+              .PageSize(10)
+          )
+    )
+</div>
+
+
+<div class="row" style="padding-top:10px;">
+    <div class="col-md-9"></div>
+    <div class="col-md-1"><input type="button" class="btn" name="btnSaveWorkBottom" value="Save Work" title="Save work as draft" style="border:1px solid #C5C5C5" /></div>
+    <div class="col-md-1"><input type="button" class="btn btn-primary" name="btnSubmitBottom" value="Submit" /></div>
+    <div class="col-md-1">
+        <input type="hidden" value="@Session["UserRole"]" id="hdnUserRole" />
+    </div>
+</div>
+
+@Styles.Render("~/bundles/smt/css")
+
+@Scripts.Render("~/bundles/smt")

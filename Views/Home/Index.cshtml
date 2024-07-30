@@ -1,0 +1,83 @@
+﻿@{
+    Layout = "";
+}
+<!doctype html>
+<html dir="ltr" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>KIPP HSR Welcome Page</title>
+    <link href="@Url.Content("~/Content/Styles/landingstyles.css?v=1.2")" rel="stylesheet" type="text/css" />
+    @Styles.Render("~/Content/bootstrap.css")
+    <style type="text/css">
+        .white-hover {
+            color: #FFFFFF !important;
+        }
+    </style>
+    <script type="text/javascript" src="@Url.Content("~/Content/jquery-1.7.1.min.js")"></script>
+</head>
+
+<body class="body">
+
+    <form id="form1" runat="server">
+        <!-- Wrapper -->
+        <div id="wrapper">
+            <!-- Page Content -->
+            <div id="banner" style="width: 100%;">
+                <a href="" @Url.Action("index", "Home") " style="height:134px;">
+                    <div id="logo"></div>
+                </a>
+                <div class="row justify-content-md-center header-assessments"></div>
+                <div class="row justify-content-md-center">
+                    <div id="leftbannerblock" class="col-md-4">
+                        <a href="@Url.Action("PMHome", "ProgressMonitoring")" target="_self" title="Academic Progress Monitoring"></a>
+                    </div>
+                    <div id="centerbannerblock" class="col-md-4">
+                        <a href="@Url.Action("Amplify", "K8Assessments")" target="_self" title="K-8 Assessments"></a>
+                    </div>
+                    <div id="rightbannerblock" class="col-md-4">
+                        <a href="@Url.Action("ACT", "HSAssessments")" target="_self" title="High School Assessments"></a>
+                    </div>
+
+                </div>
+                <div class="row justify-content-md-center header-student-data"></div>
+                <div class="row justify-content-md-center">
+                    <div id="leftbannerblock_lower" class="col-md-4">
+                        <a href="@Url.Action("StudentEnrollment", "StudentStaffData")" target="_self" title="Stakeholder Surveys"></a>
+                    </div>
+                    <div id="rightbannerblock_lower" class="col-md-4">
+                        <a href="@Url.Action("TNTP", "Surveys")" target="_self" title="Student & Staff Facts"></a>
+                    </div>
+                </div>
+            </div> <!-- Page Content -->
+
+            <!-- Footer -->
+            <div id="footer" class="row align-items-center justify-content-md-center">
+                <div id="links_col1" class="col-md-2">
+                    <a href="https://www.kipp.org/" target="_self" title="Kipp.org">
+                    </a>
+                </div>
+                <div id="links_col2" class="col-md-2">
+                    <a href="https://kippshare.shelf.io/" target="_self" title="KIPP SHare">
+                    </a>
+                </div>
+                <div id="links_col3" class="col-md-2">
+                    <a href="https://kfwddata.kipp.org" target="_self" title="KFWD Data">
+                    </a>
+                </div>
+                <div id="links_col4" class="col-md-2">
+                    <a href="mailto:helpdesk@kipp.org" target="_self" title="Tech Support.">
+                    </a>
+                </div>
+                <div id="links_col5" class="col-md-2">
+                    <a href="mailto:hsr-admin@kipp.org" target="_self" title="Send feedback.">
+                    </a>
+                </div>
+            </div> <!--Close Footer -->
+
+            </div> <!-- @@ Close Wrapper -->
+        <!--</form>-->
+</body>
+</html>
+
